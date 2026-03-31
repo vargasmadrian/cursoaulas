@@ -1234,6 +1234,100 @@ ul { list-style: none; }
     margin: 0;
 }
 
+/* ========== RdA Tags ========== */
+.rda-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.rda-tag {
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.rda-1 { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+.rda-2 { background: #d1fae5; color: #065f46; border: 1px solid #6ee7b7; }
+.rda-3 { background: #ede9fe; color: #5b21b6; border: 1px solid #c4b5fd; }
+
+.rda-tag-inline {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+/* ========== Gradebook Preview ========== */
+.gradebook-preview {
+    margin-top: 16px;
+    padding: 16px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+.gradebook-preview > strong {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--gray-800);
+    margin-bottom: 14px;
+}
+
+.gradebook-tree {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 0.82rem;
+}
+
+.tree-root {
+    font-weight: 700;
+    color: var(--gray-900);
+    padding: 6px 0;
+    border-bottom: 2px solid var(--gray-200);
+    margin-bottom: 8px;
+}
+
+.tree-root i {
+    color: var(--gray-500);
+    margin-right: 6px;
+}
+
+.tree-category {
+    padding: 8px 0 8px 20px;
+    font-weight: 700;
+    border-left: 3px solid var(--gray-300);
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.tree-category i {
+    margin-right: 6px;
+}
+
+.cat-1 { border-left-color: #2563eb; color: #1e40af; }
+.cat-2 { border-left-color: #059669; color: #065f46; }
+.cat-3 { border-left-color: #7c3aed; color: #5b21b6; }
+
+.tree-item {
+    font-weight: 400;
+    color: var(--gray-600);
+    padding: 4px 0 4px 24px;
+    font-size: 0.78rem;
+}
+
+.tree-item i {
+    color: var(--gray-400);
+    margin-right: 6px;
+    font-size: 0.75rem;
+}
+
 .tutorial-title {
     display: flex;
     align-items: center;

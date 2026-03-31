@@ -963,7 +963,7 @@
                 </div>
 
                 <!-- Criterio 4 -->
-                <div class="rubrica-card">
+                <div class="rubrica-card rubrica-card-expanded">
                     <div class="rubrica-header rubrica-orange">
                         <div class="rubrica-number">4</div>
                         <div>
@@ -971,9 +971,186 @@
                             <span class="rubrica-peso">Peso: 20%</span>
                         </div>
                     </div>
-                    <p class="rubrica-desc">Se evidencia la configuracion de la <strong>libreta de calificaciones</strong> de acuerdo con el modelo educativo rediseno o repotenciacion.</p>
+                    <p class="rubrica-desc">Se evidencia la configuracion de la libreta de calificaciones de acuerdo con el modelo educativo. Debes cumplir con <strong>3 requisitos</strong> para que cada tarea aparezca organizada por Resultado de Aprendizaje (RdA):</p>
+
+                    <!-- Tabs Libreta -->
+                    <div class="resource-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="tab-categorias"><i class="fas fa-folder-plus"></i> Crear Categorias por RdA</button>
+                            <button class="tab-btn" data-tab="tab-ubicar"><i class="fas fa-arrows-alt"></i> Ubicar Tareas en su RdA</button>
+                            <button class="tab-btn" data-tab="tab-registrar"><i class="fas fa-calendar-check"></i> Registrar en Fecha</button>
+                        </div>
+
+                        <!-- Tab: Crear Categorias -->
+                        <div class="tab-content active" id="tab-categorias">
+                            <div class="tutorial-box tutorial-box-orange">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-folder-plus"></i>
+                                    <span>Requisito A: Crear Categorias por Resultado de Aprendizaje</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">La libreta de calificaciones debe organizarse en <strong>categorias que correspondan a cada Resultado de Aprendizaje (RdA)</strong>. Generalmente son 3 RdA por materia. Asi, al abrir la seccion de Calificaciones, cada tarea aparece dentro del RdA al que pertenece.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Ir a Calificaciones > Configuracion</strong>
+                                            <p>En tu curso, haz clic en <span class="icon-ref"><i class="fas fa-table"></i> Calificaciones</span> (menu lateral o icono de libreta). Luego ve a la pestana <strong>"Configuracion"</strong> o "Configuracion de libro de calificaciones".</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Hacer clic en "Anadir categoria"</strong>
+                                            <p>En la parte inferior de la vista de configuracion, haz clic en el boton <strong>"Anadir categoria"</strong>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Nombrar la categoria con el RdA</strong>
+                                            <p>En <strong>"Nombre de la categoria"</strong>, escribe el Resultado de Aprendizaje. Ejemplo:</p>
+                                            <div class="rda-examples">
+                                                <div class="rda-tag rda-1">RdA 1 - [Descripcion del resultado de aprendizaje]</div>
+                                                <div class="rda-tag rda-2">RdA 2 - [Descripcion del resultado de aprendizaje]</div>
+                                                <div class="rda-tag rda-3">RdA 3 - [Descripcion del resultado de aprendizaje]</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">4</div>
+                                        <div>
+                                            <strong>Configurar categoria padre y metodo de calculo</strong>
+                                            <p>En <strong>"Categoria padre"</strong> selecciona el curso principal. En <strong>"Calculo total"</strong> elige el metodo de agregacion: "Suma de calificaciones", "Media" o "Media ponderada" segun tu necesidad.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">5</div>
+                                        <div>
+                                            <strong>Guardar y repetir para cada RdA</strong>
+                                            <p>Haz clic en <strong>"Guardar cambios"</strong>. Repite los pasos 2-4 para crear las categorias de RdA 2 y RdA 3.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Estructura visual -->
+                                <div class="gradebook-preview">
+                                    <strong><i class="fas fa-sitemap"></i> Asi debe verse tu libreta de calificaciones:</strong>
+                                    <div class="gradebook-tree">
+                                        <div class="tree-root"><i class="fas fa-book"></i> Curso: [Nombre del curso]</div>
+                                        <div class="tree-category cat-1">
+                                            <i class="fas fa-folder-open"></i> RdA 1 - [Descripcion]
+                                            <div class="tree-item"><i class="fas fa-file-alt"></i> Tarea: Informe de Laboratorio 1</div>
+                                            <div class="tree-item"><i class="fas fa-question-circle"></i> Cuestionario: Evaluacion Parcial 1</div>
+                                            <div class="tree-item"><i class="fas fa-comments"></i> Foro: Debate sobre Tema X</div>
+                                        </div>
+                                        <div class="tree-category cat-2">
+                                            <i class="fas fa-folder-open"></i> RdA 2 - [Descripcion]
+                                            <div class="tree-item"><i class="fas fa-file-alt"></i> Tarea: Proyecto Integrador</div>
+                                            <div class="tree-item"><i class="fas fa-question-circle"></i> Cuestionario: Evaluacion Parcial 2</div>
+                                        </div>
+                                        <div class="tree-category cat-3">
+                                            <i class="fas fa-folder-open"></i> RdA 3 - [Descripcion]
+                                            <div class="tree-item"><i class="fas fa-file-alt"></i> Tarea: Proyecto Final</div>
+                                            <div class="tree-item"><i class="fas fa-question-circle"></i> Cuestionario: Examen Final</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab: Ubicar Tareas -->
+                        <div class="tab-content" id="tab-ubicar">
+                            <div class="tutorial-box">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-arrows-alt"></i>
+                                    <span>Requisito B: Ubicar cada Tarea en su RdA</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Cada tarea, cuestionario o actividad evaluable debe estar <strong>dentro de la categoria del RdA que le corresponde</strong>. Puedes hacerlo al crear la actividad o moverla despues desde la libreta.</p>
+
+                                <h4 class="tutorial-subtitle">Opcion 1: Al crear la actividad</h4>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Al crear/editar una tarea, en "Calificacion"</strong>
+                                            <p>Busca el campo <strong>"Categoria de calificacion"</strong> dentro de la seccion de Calificacion.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Selecciona el RdA correspondiente</strong>
+                                            <p>En el desplegable, elige la categoria correcta (ej: <span class="rda-tag-inline rda-1">RdA 1</span> o <span class="rda-tag-inline rda-2">RdA 2</span> o <span class="rda-tag-inline rda-3">RdA 3</span>). Guarda cambios.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="tutorial-subtitle" style="margin-top:20px">Opcion 2: Mover desde la libreta</h4>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Ir a Calificaciones > Configuracion</strong>
+                                            <p>Localiza la actividad que quieres mover en la vista de configuracion del libro de calificaciones.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Seleccionar y mover al RdA correcto</strong>
+                                            <p>Marca la casilla junto a la actividad. En el desplegable inferior <strong>"Mover los items seleccionados a"</strong>, elige la categoria destino (RdA correspondiente) y confirma.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-tips">
+                                    <strong><i class="fas fa-lightbulb"></i> Verificacion:</strong>
+                                    Ve a Calificaciones > Vista (Reporte del calificador) y confirma que cada tarea aparezca bajo el RdA correcto y que los totales por RdA se calculen bien.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab: Registrar en fecha -->
+                        <div class="tab-content" id="tab-registrar">
+                            <div class="tutorial-box tutorial-box-green">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>Requisito C: Registrar Calificaciones en Fecha</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Las calificaciones deben registrarse <strong>oportunamente</strong> segun el calendario academico. El evaluador verifica que no se acumulen calificaciones pendientes.</p>
+
+                                <div class="desc-checklist">
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Calificar dentro del plazo institucional</strong>
+                                            <p>No esperar al final del periodo para registrar todas las notas. Calificar cada actividad a medida que los estudiantes entregan.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Verificar que no haya calificaciones faltantes</strong>
+                                            <p>Revisar periodicamente la libreta para detectar actividades sin calificacion asignada.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Todas las actividades evaluadas deben tener nota</strong>
+                                            <p>Para cumplimiento optimo (puntaje 4), al menos el 76% de las actividades deben tener calificaciones registradas en las fechas establecidas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="rubrica-levels">
-                        <div class="level level-4"><span class="level-badge">4</span> 76-100% de actividades con calificaciones registradas en fecha</div>
+                        <div class="level level-4"><span class="level-badge">4</span> 76-100% de actividades con calificaciones registradas en fecha y libreta organizada por RdA</div>
                         <div class="level level-3"><span class="level-badge">3</span> 51-75% de actividades con calificaciones registradas en fecha</div>
                         <div class="level level-2"><span class="level-badge">2</span> 26-50% de actividades con calificaciones registradas en fecha</div>
                         <div class="level level-1"><span class="level-badge">1</span> 0-25% de actividades con calificaciones registradas en fecha</div>
