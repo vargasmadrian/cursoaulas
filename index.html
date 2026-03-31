@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso: Aulas Virtuales - Centro de Recursos para Docentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Aulas Virtuales</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#plantillas">Plantillas</a></li>
+                <li><a href="#video">Video Clase</a></li>
+                <li><a href="#guia">Guia Paso a Paso</a></li>
+                <li><a href="#diferencias">Tipos de Aula</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#soporte">Soporte</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">Curso para Docentes</div>
+            <h1>Centro de Recursos<br><span class="gradient-text">Aulas Virtuales</span></h1>
+            <p class="hero-subtitle">Todo lo que necesitas para configurar y gestionar tu aula virtual en un solo lugar. Plantillas, videos, guias y soporte.</p>
+            <div class="hero-actions">
+                <a href="#plantillas" class="btn btn-primary btn-lg">
+                    <i class="fas fa-download"></i> Descargar Plantillas
+                </a>
+                <a href="#video" class="btn btn-outline btn-lg">
+                    <i class="fas fa-play-circle"></i> Ver Video
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Tipos de Plantilla</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Video Clase</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Recursos Gratuitos</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Plantillas Section -->
+    <section class="section" id="plantillas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Recursos Descargables</span>
+                <h2>Plantillas para tu Aula Virtual</h2>
+                <p>Descarga la plantilla que corresponda a tu tipo de aula y sigue las instrucciones para configurarla correctamente.</p>
+            </div>
+            <div class="cards-grid">
+                <!-- Aula No Repotenciada -->
+                <div class="card card-blue">
+                    <div class="card-icon">
+                        <i class="fas fa-chalkboard"></i>
+                    </div>
+                    <div class="card-badge">Basica</div>
+                    <h3>Aula No Repotenciada</h3>
+                    <p>Plantilla estandar para aulas virtuales que no han sido repotenciadas. Incluye la estructura basica requerida.</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> Estructura base del curso</li>
+                        <li><i class="fas fa-check"></i> Secciones predefinidas</li>
+                        <li><i class="fas fa-check"></i> Formato estandar</li>
+                    </ul>
+                    <a href="plantillas/plantilla-no-repotenciada.mbz" class="btn btn-primary btn-block" download>
+                        <i class="fas fa-download"></i> Descargar Plantilla
+                    </a>
+                </div>
+
+                <!-- Aula Repotenciada -->
+                <div class="card card-purple">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="card-badge badge-premium">Avanzada</div>
+                    <h3>Aula Repotenciada</h3>
+                    <p>Plantilla mejorada para aulas virtuales repotenciadas con recursos adicionales y mejor estructura pedagogica.</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> Estructura mejorada</li>
+                        <li><i class="fas fa-check"></i> Recursos multimedia</li>
+                        <li><i class="fas fa-check"></i> Herramientas avanzadas</li>
+                    </ul>
+                    <a href="plantillas/plantilla-repotenciada.mbz" class="btn btn-purple btn-block" download>
+                        <i class="fas fa-download"></i> Descargar Plantilla
+                    </a>
+                </div>
+
+                <!-- Materiales Adicionales -->
+                <div class="card card-green">
+                    <div class="card-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <div class="card-badge badge-extra">Complementario</div>
+                    <h3>Materiales Adicionales</h3>
+                    <p>Recursos complementarios, banners, iconos y materiales extras para personalizar y enriquecer tu aula virtual.</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> Banners e imagenes</li>
+                        <li><i class="fas fa-check"></i> Iconos y recursos graficos</li>
+                        <li><i class="fas fa-check"></i> Guias en PDF</li>
+                    </ul>
+                    <a href="materiales/" class="btn btn-green btn-block">
+                        <i class="fas fa-folder-open"></i> Ver Materiales
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section section-dark" id="video">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag tag-light">Video Tutorial</span>
+                <h2>Video de la Clase</h2>
+                <p>Revisa la grabacion de la clase donde explicamos paso a paso como configurar tu aula virtual.</p>
+            </div>
+            <div class="video-container">
+                <div class="video-placeholder" id="videoPlaceholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Video de la clase</p>
+                    <span>Proximamente - El enlace se actualizara despues de la sesion</span>
+                </div>
+                <!-- Cuando tengas el video, reemplaza el div anterior con:
+                <iframe src="URL_DEL_VIDEO" allowfullscreen></iframe>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Guia Paso a Paso -->
+    <section class="section" id="guia">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Instrucciones</span>
+                <h2>Guia Paso a Paso</h2>
+                <p>Sigue estos pasos para configurar tu aula virtual correctamente.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Identifica tu tipo de aula</h3>
+                        <p>Determina si tu aula es repotenciada o no repotenciada. Esto definira que plantilla debes usar.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Descarga la plantilla correspondiente</h3>
+                        <p>Ve a la seccion de plantillas y descarga el archivo .mbz que corresponda a tu tipo de aula.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Importa la plantilla en Moodle</h3>
+                        <p>Accede a tu aula virtual en Moodle, ve a "Restaurar" y sube el archivo .mbz descargado.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Personaliza tu contenido</h3>
+                        <p>Agrega tus materiales, tareas, foros y recursos especificos de tu curso.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Revisa y publica</h3>
+                        <p>Verifica que todo este correcto usando el checklist y haz visible tu aula para los estudiantes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferencias -->
+    <section class="section section-light" id="diferencias">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Comparativa</span>
+                <h2>Tipos de Aula Virtual</h2>
+                <p>Conoce las diferencias entre los tipos de aula para elegir la plantilla correcta.</p>
+            </div>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Caracteristica</th>
+                            <th class="col-blue">No Repotenciada</th>
+                            <th class="col-purple">Repotenciada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Estructura base</td>
+                            <td><i class="fas fa-check text-green"></i></td>
+                            <td><i class="fas fa-check text-green"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Secciones predefinidas</td>
+                            <td><i class="fas fa-check text-green"></i></td>
+                            <td><i class="fas fa-check text-green"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Recursos multimedia mejorados</td>
+                            <td><i class="fas fa-minus text-gray"></i></td>
+                            <td><i class="fas fa-check text-green"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Herramientas avanzadas</td>
+                            <td><i class="fas fa-minus text-gray"></i></td>
+                            <td><i class="fas fa-check text-green"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Diseno visual mejorado</td>
+                            <td><i class="fas fa-minus text-gray"></i></td>
+                            <td><i class="fas fa-check text-green"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Plantilla de actividades</td>
+                            <td>Basica</td>
+                            <td>Completa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist -->
+    <section class="section" id="checklist">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Verificacion</span>
+                <h2>Checklist de tu Aula Virtual</h2>
+                <p>Usa esta lista para verificar que tu aula virtual esta correctamente configurada antes de hacerla visible.</p>
+            </div>
+            <div class="checklist-container">
+                <div class="checklist-column">
+                    <h3><i class="fas fa-clipboard-check"></i> Configuracion General</h3>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>La plantilla fue importada correctamente</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>El nombre del curso es correcto</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>La imagen del curso esta configurada</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Las fechas del curso son correctas</span>
+                    </label>
+                </div>
+                <div class="checklist-column">
+                    <h3><i class="fas fa-book"></i> Contenido</h3>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Silabo/programa del curso subido</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Materiales de cada semana cargados</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Tareas y evaluaciones creadas</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Foros de discusion habilitados</span>
+                    </label>
+                </div>
+                <div class="checklist-column">
+                    <h3><i class="fas fa-cog"></i> Revision Final</h3>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Links y recursos funcionan correctamente</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Calificaciones configuradas</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Vista de estudiante verificada</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Aula visible para estudiantes</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-light" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ayuda</span>
+                <h2>Preguntas Frecuentes</h2>
+                <p>Respuestas a las dudas mas comunes sobre la configuracion de aulas virtuales.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como se cual es mi tipo de aula (repotenciada o no)?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tu coordinador academico te indicara si tu aula ha sido repotenciada. Generalmente, las aulas repotenciadas tienen un diseno visual mejorado y herramientas adicionales ya preconfiguradas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Puedo usar la plantilla repotenciada en un aula no repotenciada?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No es recomendable. Cada plantilla esta disenada especificamente para su tipo de aula. Usar la plantilla incorrecta puede causar problemas de visualizacion y funcionalidad.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Que hago si tengo un error al importar la plantilla?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Verifica que el archivo .mbz no este corrupto (descargalo nuevamente). Si el problema persiste, contacta al equipo de soporte a traves del formulario en la seccion de Soporte de esta pagina.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Puedo personalizar la plantilla despues de importarla?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Si, la plantilla es un punto de partida. Puedes agregar, modificar o reorganizar secciones, actividades y recursos segun las necesidades de tu curso.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Donde puedo ver la grabacion de la clase?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La grabacion estara disponible en la seccion "Video de la Clase" de esta misma pagina. Se publicara despues de cada sesion del curso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soporte -->
+    <section class="section" id="soporte">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contacto</span>
+                <h2>Necesitas Ayuda?</h2>
+                <p>Si tienes dudas o problemas, no dudes en contactarnos a traves de estos canales.</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Correo Electronico</h3>
+                    <p>Envianos tu consulta y te responderemos lo antes posible.</p>
+                    <a href="mailto:soporte@universidad.edu" class="btn btn-outline">
+                        soporte@universidad.edu
+                    </a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon icon-green">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Escribenos para una respuesta rapida durante horario laboral.</p>
+                    <a href="#" class="btn btn-outline">
+                        Enviar mensaje
+                    </a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon icon-purple">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Mesa de Ayuda</h3>
+                    <p>Registra un ticket para seguimiento de incidencias tecnicas.</p>
+                    <a href="#" class="btn btn-outline">
+                        Crear ticket
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Curso Aulas Virtuales</span>
+                </div>
+                <p class="footer-text">Centro de recursos para docentes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
