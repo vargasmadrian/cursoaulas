@@ -1201,8 +1201,8 @@ ul { list-style: none; }
 }
 
 .consistency-icon {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: var(--gray-100);
     color: var(--gray-600);
@@ -1210,8 +1210,15 @@ ul { list-style: none; }
     align-items: center;
     justify-content: center;
     margin: 0 auto 10px;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
+
+.icon-ci-blue { background: #dbeafe; color: #2563eb; }
+.icon-ci-green { background: #d1fae5; color: #059669; }
+.icon-ci-purple { background: #ede9fe; color: #7c3aed; }
+.icon-ci-orange { background: #fff7ed; color: #ea580c; }
+.icon-ci-red { background: #fee2e2; color: #dc2626; }
+.icon-ci-gray { background: #f3f4f6; color: #4b5563; }
 
 .consistency-item strong {
     display: block;

@@ -63,17 +63,16 @@ Los contenidos del aula deben estar organizados de manera logica, coherente y fa
 
 ---
 
-## Requisito C: Consistencia Visual y Pedagogica
+## Requisito C: Elementos Esenciales del Aula
 
-El aula debe mantener un diseno homogeneo y profesional en todas sus secciones.
+El aula virtual debe incluir estos 6 elementos esenciales en la seccion introductoria del curso:
 
-### Elementos de consistencia
-
-- **Formato uniforme**: Todos los recursos deben seguir el mismo patron de presentacion
-- **Nombres descriptivos**: Nombrar cada recurso y actividad de forma clara (evitar "Tarea 1", preferir "Tarea: Informe de Laboratorio - Circuitos en Serie")
-- **Iconografia consistente**: Mantener los iconos y banners de la plantilla PUCESE
-- **Fechas configuradas**: Todas las actividades y tareas deben tener fechas de apertura y cierre
-- **Recursos visibles e invisibles correctamente**: Solo mostrar lo que corresponde a la semana actual o secciones ya cubiertas
+1. **Horario de Clases**: Publicar el horario semanal de clases presenciales y/o virtuales con dias, horas y aula/link de reunion
+2. **Horario de Mentorias**: Indicar los dias y horas disponibles para mentorias/tutorias academicas con el docente
+3. **Silabo de la Materia**: Subir el silabo oficial del curso en formato PDF, visible y accesible para todos los estudiantes
+4. **Introduccion a la Clase**: Mensaje de bienvenida explicando los objetivos del curso, la metodologia y lo que se espera del estudiante
+5. **Presentacion del Docente con Foto**: Incluir foto profesional del docente, breve resena academica, titulo, especialidad y datos de contacto
+6. **Normas y Politicas del Curso**: Reglas de convivencia, politica de plagio, penalizacion por entregas tardias y netiqueta del aula virtual
 
 ---
 
