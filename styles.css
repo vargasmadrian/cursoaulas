@@ -1055,6 +1055,178 @@ ul { list-style: none; }
     color: var(--gray-800);
 }
 
+/* ========== Badge Critical ========== */
+.badge-critical {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #dc2626;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-left: auto;
+    animation: pulse-badge 2s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* ========== Plantilla Mini Cards ========== */
+.plantilla-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.plantilla-mini {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+}
+
+.plantilla-mini-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--primary-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.plantilla-mini-icon.icon-purple {
+    background: var(--purple-light);
+    color: var(--purple);
+}
+
+.plantilla-mini strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--gray-900);
+    margin-bottom: 2px;
+}
+
+.plantilla-mini p {
+    font-size: 0.72rem;
+    color: var(--gray-500);
+    margin: 0 0 6px;
+    word-break: break-all;
+}
+
+.btn-mini {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-mini:hover { background: var(--primary-dark); }
+.btn-mini-purple { background: var(--purple); }
+.btn-mini-purple:hover { background: var(--purple-dark); }
+
+/* ========== Structure Flow ========== */
+.structure-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.flow-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    color: var(--gray-700);
+}
+
+.flow-item i {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.flow-item strong {
+    color: var(--gray-900);
+}
+
+.flow-label { background: #eff6ff; border: 1px solid #bfdbfe; }
+.flow-label i { color: var(--primary); }
+.flow-resource { background: #f0fdf4; border: 1px solid #a7f3d0; }
+.flow-resource i { color: var(--green); }
+.flow-activity { background: #fef3c7; border: 1px solid #fde68a; }
+.flow-activity i { color: #d97706; }
+.flow-eval { background: #ede9fe; border: 1px solid #c4b5fd; }
+.flow-eval i { color: var(--purple); }
+
+.flow-arrow {
+    color: var(--gray-300);
+    font-size: 0.8rem;
+}
+
+/* ========== Consistency Grid ========== */
+.consistency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.consistency-item {
+    padding: 16px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.consistency-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gray-100);
+    color: var(--gray-600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-size: 0.95rem;
+}
+
+.consistency-item strong {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--gray-900);
+    margin-bottom: 4px;
+}
+
+.consistency-item p {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    line-height: 1.4;
+    margin: 0;
+}
+
 .tutorial-title {
     display: flex;
     align-items: center;
@@ -1400,6 +1572,11 @@ ul { list-style: none; }
 
     .rubrica-grid > :last-child:nth-child(odd) {
         max-width: 100%;
+    }
+
+    .plantilla-cards,
+    .consistency-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero h1 {

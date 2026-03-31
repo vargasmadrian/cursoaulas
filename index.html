@@ -727,7 +727,7 @@
                 </div>
 
                 <!-- Criterio 3 -->
-                <div class="rubrica-card">
+                <div class="rubrica-card rubrica-card-expanded">
                     <div class="rubrica-header rubrica-green">
                         <div class="rubrica-number">3</div>
                         <div>
@@ -735,7 +735,224 @@
                             <span class="rubrica-peso">Peso: 20%</span>
                         </div>
                     </div>
-                    <p class="rubrica-desc">Se evidencia la configuracion de <strong>contenidos de aprendizaje de manera estructurada</strong> en el aula virtual.</p>
+                    <p class="rubrica-desc">Se evidencia la configuracion de contenidos de aprendizaje de manera estructurada. Debes cumplir con <strong>3 requisitos</strong>, siendo el uso de la plantilla PUCESE el mas importante:</p>
+
+                    <!-- Tabs Minuciosidad -->
+                    <div class="resource-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="tab-plantilla"><i class="fas fa-university"></i> Plantilla PUCESE</button>
+                            <button class="tab-btn" data-tab="tab-estructura"><i class="fas fa-sitemap"></i> Organizacion Estructurada</button>
+                            <button class="tab-btn" data-tab="tab-consistencia"><i class="fas fa-palette"></i> Consistencia Visual</button>
+                        </div>
+
+                        <!-- Tab: Plantilla PUCESE -->
+                        <div class="tab-content active" id="tab-plantilla">
+                            <div class="tutorial-box tutorial-box-green">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-university"></i>
+                                    <span>Requisito A: Usar la Plantilla Oficial PUCESE</span>
+                                    <span class="badge-critical">Indispensable</span>
+                                </div>
+                                <p class="tutorial-intro">La plantilla oficial de la PUCESE es el <strong>punto de partida obligatorio</strong> para configurar tu aula virtual. El evaluador verifica que el aula fue construida sobre esta plantilla. Sin ella, el criterio de minuciosidad no se cumple.</p>
+
+                                <div class="plantilla-cards">
+                                    <div class="plantilla-mini">
+                                        <div class="plantilla-mini-icon"><i class="fas fa-chalkboard"></i></div>
+                                        <div>
+                                            <strong>Aula No Repotenciada</strong>
+                                            <p>aula_grado_no_repotenciado_2024s2_v4.mbz</p>
+                                            <a href="plantillas/aula_grado_no_repotenciado_2024s2_v4.mbz" class="btn-mini" download><i class="fas fa-download"></i> Descargar</a>
+                                        </div>
+                                    </div>
+                                    <div class="plantilla-mini">
+                                        <div class="plantilla-mini-icon icon-purple"><i class="fas fa-rocket"></i></div>
+                                        <div>
+                                            <strong>Aula Repotenciada</strong>
+                                            <p>aula_grado_repotenciada_2024s2_v3.mbz</p>
+                                            <a href="plantillas/aula_grado_repotenciada_2024s2_v3.mbz" class="btn-mini btn-mini-purple" download><i class="fas fa-download"></i> Descargar</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="tutorial-subtitle">Por que es indispensable:</h4>
+                                <div class="desc-checklist">
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Uniformidad institucional</strong>
+                                            <p>Garantiza que todas las aulas virtuales de la PUCESE mantengan la misma imagen y estructura.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Estructura aprobada por la DITH</strong>
+                                            <p>Incluye las secciones, banners, iconos y elementos visuales oficiales requeridos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Base para la evaluacion</strong>
+                                            <p>El evaluador verifica que tu aula parte de esta plantilla. No usarla afecta directamente este criterio.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-steps" style="margin-top:16px">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Descarga la plantilla que corresponda a tu tipo de aula</strong>
+                                            <p>Usa los botones de arriba o ve a la <a href="#plantillas" style="color:var(--primary);font-weight:600">seccion de Plantillas</a>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Importa en Moodle: Restaurar > subir archivo .mbz</strong>
+                                            <p>Accede a tu aula virtual, ve a "Restaurar" y sube el archivo .mbz descargado.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Opciones criticas de restauracion</strong>
+                                            <div class="warning-box" style="margin-top:8px">
+                                                <div class="warning-item">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                    <div><strong>Mantener roles y matriculaciones actuales:</strong> <span class="highlight-yes">SI</span></div>
+                                                </div>
+                                                <div class="warning-item">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                    <div><strong>Restaurar en este curso:</strong> <span class="highlight-delete">Borrar el contenido actual y despues restaurar</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">4</div>
+                                        <div>
+                                            <strong>No elimines secciones obligatorias de la plantilla</strong>
+                                            <p>Puedes agregar contenido, pero <strong>no borres</strong> los banners, secciones ni elementos institucionales que vienen en la plantilla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab: Organizacion Estructurada -->
+                        <div class="tab-content" id="tab-estructura">
+                            <div class="tutorial-box">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-sitemap"></i>
+                                    <span>Requisito B: Organizacion Estructurada de Contenidos</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Los contenidos deben estar organizados de manera <strong>logica, coherente y facil de navegar</strong> para el estudiante. Cada seccion debe seguir una secuencia progresiva de aprendizaje.</p>
+
+                                <h4 class="tutorial-subtitle">Estructura recomendada por seccion/semana:</h4>
+                                <div class="structure-flow">
+                                    <div class="flow-item flow-label">
+                                        <i class="fas fa-tag"></i>
+                                        <span><strong>Etiqueta</strong> con el titulo/tema de la semana</span>
+                                    </div>
+                                    <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                                    <div class="flow-item flow-resource">
+                                        <i class="fas fa-book-open"></i>
+                                        <span><strong>Recursos de estudio:</strong> PDFs, PPTs, videos, enlaces</span>
+                                    </div>
+                                    <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                                    <div class="flow-item flow-activity">
+                                        <i class="fas fa-pen"></i>
+                                        <span><strong>Actividades:</strong> foros, tareas, wikis</span>
+                                    </div>
+                                    <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                                    <div class="flow-item flow-eval">
+                                        <i class="fas fa-clipboard-check"></i>
+                                        <span><strong>Evaluacion:</strong> cuestionarios, tareas calificables</span>
+                                    </div>
+                                </div>
+
+                                <div class="desc-checklist" style="margin-top:16px">
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Titulo claro en cada seccion</strong>
+                                            <p>Indicar el tema a tratar (ej: "Semana 3: Bases de Datos Relacionales - Normalizacion").</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Descripcion breve en cada seccion</strong>
+                                            <p>Explicar que aprendera el estudiante en esa unidad y que actividades realizara.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Agrupacion coherente</strong>
+                                            <p>Recursos, actividades y evaluaciones de un mismo tema deben estar en la misma seccion.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Etiquetas separadoras</strong>
+                                            <p>Usar etiquetas para dividir visualmente: Materiales | Actividades | Evaluacion dentro de cada seccion.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab: Consistencia Visual -->
+                        <div class="tab-content" id="tab-consistencia">
+                            <div class="tutorial-box tutorial-box-orange">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-palette"></i>
+                                    <span>Requisito C: Consistencia Visual y Pedagogica</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">El aula debe mantener un <strong>diseno homogeneo y profesional</strong> en todas sus secciones. Un aula visualmente consistente transmite seriedad y facilita la navegacion del estudiante.</p>
+
+                                <div class="consistency-grid">
+                                    <div class="consistency-item">
+                                        <div class="consistency-icon"><i class="fas fa-font"></i></div>
+                                        <strong>Nombres descriptivos</strong>
+                                        <p>Evitar "Tarea 1". Preferir "Tarea: Informe de Laboratorio - Circuitos en Serie".</p>
+                                    </div>
+                                    <div class="consistency-item">
+                                        <div class="consistency-icon"><i class="fas fa-image"></i></div>
+                                        <strong>Iconografia PUCESE</strong>
+                                        <p>Mantener los banners e iconos que vienen en la plantilla oficial.</p>
+                                    </div>
+                                    <div class="consistency-item">
+                                        <div class="consistency-icon"><i class="fas fa-calendar-check"></i></div>
+                                        <strong>Fechas configuradas</strong>
+                                        <p>Todas las tareas y actividades con fechas de apertura y cierre.</p>
+                                    </div>
+                                    <div class="consistency-item">
+                                        <div class="consistency-icon"><i class="fas fa-eye"></i></div>
+                                        <strong>Visibilidad correcta</strong>
+                                        <p>Mostrar solo lo correspondiente. Ocultar secciones futuras si aplica.</p>
+                                    </div>
+                                    <div class="consistency-item">
+                                        <div class="consistency-icon"><i class="fas fa-equals"></i></div>
+                                        <strong>Formato uniforme</strong>
+                                        <p>Todos los recursos siguen el mismo patron de presentacion y estilo.</p>
+                                    </div>
+                                    <div class="consistency-item">
+                                        <div class="consistency-icon"><i class="fas fa-layer-group"></i></div>
+                                        <strong>Secuencia logica</strong>
+                                        <p>El contenido fluye progresivamente de lo simple a lo complejo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="rubrica-levels">
                         <div class="level level-4"><span class="level-badge">4</span> 76-100% de contenidos configurados de manera estructurada</div>
                         <div class="level level-3"><span class="level-badge">3</span> 51-75% de contenidos configurados de manera estructurada</div>
