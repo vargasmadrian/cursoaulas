@@ -29,6 +29,7 @@
                 <li><a href="#guia">Guia Paso a Paso</a></li>
                 <li><a href="#rubrica">Rubrica</a></li>
                 <li><a href="#diferencias">Tipos de Aula</a></li>
+                <li><a href="#checklist">Checklist</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#soporte">Soporte</a></li>
             </ul>
@@ -1158,7 +1159,7 @@
                 </div>
 
                 <!-- Criterio 5 -->
-                <div class="rubrica-card">
+                <div class="rubrica-card rubrica-card-expanded">
                     <div class="rubrica-header rubrica-red">
                         <div class="rubrica-number">5</div>
                         <div>
@@ -1166,7 +1167,190 @@
                             <span class="rubrica-peso">Peso: 20%</span>
                         </div>
                     </div>
-                    <p class="rubrica-desc">Se evidencia <strong>retroalimentacion de las actividades planteadas</strong>, maximo una semana despues de asignada.</p>
+                    <p class="rubrica-desc">Se evidencia retroalimentacion de las actividades planteadas. Al calificar cada tarea con rubrica debes cumplir <strong>3 requisitos</strong>:</p>
+
+                    <!-- Tabs Retroalimentacion -->
+                    <div class="resource-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="tab-comentario-criterio"><i class="fas fa-comment-dots"></i> Comentarios por Criterio</button>
+                            <button class="tab-btn" data-tab="tab-comentario-general"><i class="fas fa-comment-alt"></i> Comentario General</button>
+                            <button class="tab-btn" data-tab="tab-plazo"><i class="fas fa-clock"></i> Plazo Maximo 1 Semana</button>
+                        </div>
+
+                        <!-- Tab: Comentarios por Criterio -->
+                        <div class="tab-content active" id="tab-comentario-criterio">
+                            <div class="tutorial-box tutorial-box-red">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-comment-dots"></i>
+                                    <span>Requisito A: Comentarios por Criterio en la Rubrica</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Al calificar una tarea con rubrica, debes escribir un <strong>comentario en cada criterio</strong> explicando por que se asigno ese nivel. Esto permite al estudiante saber <strong>exactamente donde mejorar</strong>.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Ir a la tarea > "Ver todas las entregas"</strong>
+                                            <p>Accede a la tarea y haz clic en "Ver todas las entregas" para ver la lista de estudiantes.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Clic en "Calificar" junto al estudiante</strong>
+                                            <p>La rubrica se mostrara como una tabla expandible con todos los criterios definidos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Seleccionar nivel + escribir comentario en CADA criterio</strong>
+                                            <p>Haz clic en el <strong>nivel alcanzado</strong> (se marca en verde). En el campo de comentario junto al criterio, escribe una observacion especifica y constructiva.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Ejemplo visual de comentarios -->
+                                <div class="feedback-example">
+                                    <strong><i class="fas fa-eye"></i> Ejemplo de comentarios por criterio:</strong>
+                                    <div class="feedback-criteria">
+                                        <div class="feedback-row">
+                                            <div class="feedback-criterion">
+                                                <span class="feedback-label">Contenido</span>
+                                                <span class="feedback-level level-good-tag">Bueno (3pts)</span>
+                                            </div>
+                                            <div class="feedback-comment"><i class="fas fa-comment"></i> "Buen analisis de los datos, pero falta comparar con los valores teoricos del marco referencial."</div>
+                                        </div>
+                                        <div class="feedback-row">
+                                            <div class="feedback-criterion">
+                                                <span class="feedback-label">Estructura</span>
+                                                <span class="feedback-level level-excellent-tag">Excelente (5pts)</span>
+                                            </div>
+                                            <div class="feedback-comment"><i class="fas fa-comment"></i> "El informe sigue el formato correcto. Excelente organizacion de secciones."</div>
+                                        </div>
+                                        <div class="feedback-row">
+                                            <div class="feedback-criterion">
+                                                <span class="feedback-label">Redaccion</span>
+                                                <span class="feedback-level level-good-tag">Bueno (3pts)</span>
+                                            </div>
+                                            <div class="feedback-comment"><i class="fas fa-comment"></i> "Revisar ortografia en la seccion de conclusiones. Usar conectores logicos entre parrafos."</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-tips">
+                                    <strong><i class="fas fa-lightbulb"></i> Configuracion previa necesaria:</strong>
+                                    Al crear la rubrica, en "Opciones de rubrica" habilitar: "Mostrar descripcion a los evaluados" = SI y "Mostrar puntuacion por criterio" = SI. Asi el estudiante ve los comentarios.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab: Comentario General -->
+                        <div class="tab-content" id="tab-comentario-general">
+                            <div class="tutorial-box">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-comment-alt"></i>
+                                    <span>Requisito B: Comentario General de Retroalimentacion</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Ademas de los comentarios por criterio, debes escribir un <strong>comentario general</strong> que resuma la evaluacion y oriente al estudiante sobre como mejorar en futuras entregas.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Despues de seleccionar niveles en la rubrica</strong>
+                                            <p>Una vez que hayas calificado cada criterio de la rubrica, desplazate hacia abajo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Escribir en "Comentarios de retroalimentacion"</strong>
+                                            <p>En el campo <strong>"Comentarios de retroalimentacion"</strong> escribe un resumen constructivo y orientador.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Opcionalmente: adjuntar archivos de retroalimentacion</strong>
+                                            <p>Puedes adjuntar PDFs corregidos o documentos con anotaciones en "Archivos de retroalimentacion". Luego haz clic en <strong>"Guardar cambios"</strong>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Ejemplo de comentario general -->
+                                <div class="desc-example">
+                                    <strong><i class="fas fa-eye"></i> Ejemplo de comentario general:</strong>
+                                    <div class="desc-example-content">
+                                        <p>"Buen trabajo en general. Tu analisis de datos es solido y la estructura del informe es correcta. Para la proxima entrega, enfocate en: (1) comparar tus resultados experimentales con los valores teoricos, (2) revisar la ortografia en las conclusiones, y (3) agregar graficos comparativos. Sigue asi, vas por buen camino. Calificacion: 85/100."</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="tutorial-subtitle" style="margin-top:16px">Caracteristicas de una buena retroalimentacion:</h4>
+                                <div class="consistency-grid">
+                                    <div class="consistency-item">
+                                        <div class="consistency-icon icon-ci-blue"><i class="fas fa-crosshairs"></i></div>
+                                        <strong>Especifica</strong>
+                                        <p>Indicar exactamente que se hizo bien y que se debe mejorar.</p>
+                                    </div>
+                                    <div class="consistency-item">
+                                        <div class="consistency-icon icon-ci-green"><i class="fas fa-seedling"></i></div>
+                                        <strong>Constructiva</strong>
+                                        <p>Orientar hacia la mejora, no solo senalar errores.</p>
+                                    </div>
+                                    <div class="consistency-item">
+                                        <div class="consistency-icon icon-ci-orange"><i class="fas fa-stopwatch"></i></div>
+                                        <strong>Oportuna</strong>
+                                        <p>A tiempo para que el estudiante la aplique en la siguiente entrega.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab: Plazo -->
+                        <div class="tab-content" id="tab-plazo">
+                            <div class="tutorial-box tutorial-box-orange">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Requisito C: Retroalimentar Maximo 1 Semana Despues</span>
+                                    <span class="badge-critical">Indispensable</span>
+                                </div>
+                                <p class="tutorial-intro">La retroalimentacion debe evidenciarse <strong>maximo una semana despues</strong> de la fecha de entrega. Para puntaje optimo (4), esto debe cumplirse en al menos el 76% de las actividades.</p>
+
+                                <div class="desc-checklist">
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Calificar y retroalimentar a medida que entregan</strong>
+                                            <p>No esperar a que todos entreguen. Califica por lotes a medida que llegan las entregas.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>No acumular para el final del periodo</strong>
+                                            <p>El evaluador revisa las fechas de calificacion en Moodle. Se evidencia cuando se hizo la retroalimentacion.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div>
+                                            <strong>Usar herramientas de Moodle para agilizar</strong>
+                                            <p>Calificacion rapida, descargar todas las entregas, calificar offline y subir calificaciones.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="warning-box" style="margin-top:16px">
+                                    <div class="warning-item">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <div><strong>Moodle registra la fecha exacta</strong> en que se califico cada tarea. El evaluador puede verificar si la retroalimentacion se dio dentro del plazo de 1 semana.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="rubrica-levels">
                         <div class="level level-4"><span class="level-badge">4</span> 76-100% de actividades con retroalimentacion en max. 1 semana</div>
                         <div class="level level-3"><span class="level-badge">3</span> 51-75% de actividades con retroalimentacion en max. 1 semana</div>
@@ -1245,56 +1429,72 @@
                     <h3><i class="fas fa-palette"></i> Criterio 1: Creatividad</h3>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Uso al menos 3 tipos de actividades diferentes</span>
+                        <span>Uso al menos 3 tipos de recursos diferentes (PDF, PPT, H5P, Genially, etc.)</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Los recursos y materiales son de alta calidad</span>
+                        <span>Los PDFs subidos tienen autoria propia del docente</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Los materiales son inherentes al contenido de la materia</span>
+                        <span>Las presentaciones PPT se previsualizan dentro del aula (no solo descarga)</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Mas del 76% de actividades utilizan recursos didacticos</span>
+                        <span>Configure un Tutor Virtual con NotebookLM para la materia</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Mas del 76% de actividades utilizan recursos didacticos creativos</span>
                     </label>
                 </div>
                 <div class="checklist-column">
                     <h3><i class="fas fa-file-alt"></i> Criterio 2: Instrumentos de Evaluacion</h3>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Las evaluaciones tienen instrucciones claras</span>
+                        <span>Cada tarea tiene una rubrica de evaluacion creada en Moodle</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Los instrumentos estan relacionados con el resultado de aprendizaje</span>
+                        <span>Las tareas se califican usando la rubrica (calificacion avanzada)</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Se evidencia elaboracion y aplicacion de instrumentos</span>
+                        <span>Las descripciones de actividades son claras y detalladas</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Cada rubrica tiene criterios con niveles de desempeno definidos</span>
                     </label>
                 </div>
                 <div class="checklist-column">
                     <h3><i class="fas fa-sitemap"></i> Criterio 3: Minuciosidad</h3>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Los contenidos estan configurados de manera estructurada</span>
+                        <span>Se uso la plantilla oficial PUCESE como base del aula</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Las secciones siguen un orden logico</span>
+                        <span>Las secciones siguen el orden: etiqueta > recursos > actividades > evaluacion</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>El aula presenta una organizacion clara y coherente</span>
+                        <span>Incluye: horario clases, horario mentorias, silabo</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Incluye: introduccion, presentacion docente con foto, normas y politicas</span>
                     </label>
                 </div>
                 <div class="checklist-column">
                     <h3><i class="fas fa-calculator"></i> Criterio 4: Libreta de Calificaciones</h3>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>La libreta de calificaciones esta configurada segun el modelo educativo</span>
+                        <span>Categorias creadas por RdA (Resultado de Aprendizaje 1, 2 y 3)</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Cada tarea/evaluacion esta ubicada dentro de su RdA correspondiente</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
@@ -1302,22 +1502,26 @@
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Todas las actividades evaluadas tienen calificacion asignada</span>
+                        <span>Las ponderaciones de las categorias suman 100%</span>
                     </label>
                 </div>
                 <div class="checklist-column">
                     <h3><i class="fas fa-comments"></i> Criterio 5: Retroalimentacion</h3>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>Todas las actividades tienen retroalimentacion</span>
+                        <span>Cada calificacion por rubrica incluye comentarios en cada criterio</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>La retroalimentacion se da maximo 1 semana despues de asignada</span>
+                        <span>Cada calificacion incluye un comentario general de retroalimentacion</span>
                     </label>
                     <label class="checklist-item">
                         <input type="checkbox">
-                        <span>La retroalimentacion es clara y orientadora para el estudiante</span>
+                        <span>La retroalimentacion se da maximo 1 semana despues de la fecha de entrega</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>La retroalimentacion es especifica, constructiva y orientadora</span>
                     </label>
                 </div>
             </div>
