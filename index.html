@@ -489,7 +489,7 @@
                 </div>
 
                 <!-- Criterio 2 -->
-                <div class="rubrica-card">
+                <div class="rubrica-card rubrica-card-expanded">
                     <div class="rubrica-header rubrica-purple">
                         <div class="rubrica-number">2</div>
                         <div>
@@ -497,7 +497,227 @@
                             <span class="rubrica-peso">Peso: 20%</span>
                         </div>
                     </div>
-                    <p class="rubrica-desc">Se evidencia la elaboracion y aplicacion de <strong>instrumentos de evaluacion con instrucciones claras</strong> relacionados con el resultado de aprendizaje.</p>
+                    <p class="rubrica-desc">Se evidencia la elaboracion y aplicacion de instrumentos de evaluacion con instrucciones claras. Debes cumplir con <strong>3 requisitos</strong> en cada tarea de tu aula virtual:</p>
+
+                    <!-- Tabs Instrumentos -->
+                    <div class="resource-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="tab-rubrica"><i class="fas fa-th-list"></i> Crear Rubricas</button>
+                            <button class="tab-btn" data-tab="tab-calificacion"><i class="fas fa-star-half-alt"></i> Calificacion por Rubrica</button>
+                            <button class="tab-btn" data-tab="tab-descripcion"><i class="fas fa-align-left"></i> Descripciones Claras</button>
+                        </div>
+
+                        <!-- Tab: Crear Rubricas -->
+                        <div class="tab-content active" id="tab-rubrica">
+                            <div class="tutorial-box tutorial-box-purple">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-th-list"></i>
+                                    <span>Requisito A: Crear Rubricas de Evaluacion</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Cada tarea debe tener una <strong>rubrica de evaluacion visible para el estudiante</strong>. La rubrica es una tabla que define los criterios y niveles de desempeno, para que el estudiante sepa <strong>exactamente</strong> como sera evaluado antes de entregar.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Crear o editar la tarea en Moodle</strong>
+                                            <p>Anadir actividad o recurso > <span class="icon-ref"><i class="fas fa-tasks"></i> Tarea</span>. Completa nombre y descripcion.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Cambiar el metodo de calificacion a "Rubrica"</strong>
+                                            <p>En la seccion <strong>"Calificacion"</strong>, cambia "Metodo de calificacion" de "Calificacion simple directa" a <span class="highlight-yes">Rubrica</span>. Haz clic en "Guardar cambios y mostrar".</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Definir la rubrica desde cero</strong>
+                                            <p>Clic en <strong>"Definir una rubrica nueva desde cero"</strong>. Escribe un nombre (ej: "Rubrica - Informe Lab 1").</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">4</div>
+                                        <div>
+                                            <strong>Agregar criterios y niveles</strong>
+                                            <p>Clic en "Haga clic para editar criterio" y define cada aspecto a evaluar (ej: Contenido, Estructura, Analisis). Para cada criterio, agrega niveles con descripcion y puntos (ej: Excelente=5pts, Bueno=3pts, Insuficiente=1pt). Usa <strong>"Anadir criterio"</strong> y <strong>"Anadir nivel"</strong> segun necesites.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">5</div>
+                                        <div>
+                                            <strong>Hacer la rubrica VISIBLE al estudiante</strong>
+                                            <p>En <strong>"Opciones de rubrica"</strong>, marca estas casillas:</p>
+                                            <div class="warning-box" style="margin-top:8px">
+                                                <div class="warning-item">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                    <div><strong>"Permitir a usuarios vista previa de rubrica"</strong> = <span class="highlight-yes">SI</span> (el estudiante vera la rubrica antes de entregar)</div>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top:8px">Tambien marca: "Mostrar descripcion durante la evaluacion", "Mostrar descripcion a los evaluados" y "Mostrar puntuacion por criterio".</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">6</div>
+                                        <div>
+                                            <strong>Guardar rubrica y hacerla lista</strong>
+                                            <p>Clic en <strong>"Guardar rubrica y hacerla lista"</strong>. La rubrica quedara activa y visible para los estudiantes en esa tarea.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Ejemplo de rubrica -->
+                                <div class="rubrica-example">
+                                    <strong><i class="fas fa-table"></i> Ejemplo de estructura de rubrica:</strong>
+                                    <table class="example-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Criterio</th>
+                                                <th class="level-excellent">Excelente (5pts)</th>
+                                                <th class="level-good">Bueno (3pts)</th>
+                                                <th class="level-poor">Insuficiente (1pt)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Contenido</td>
+                                                <td>Aborda todos los temas con profundidad</td>
+                                                <td>Aborda la mayoria de temas</td>
+                                                <td>No aborda los temas requeridos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Estructura</td>
+                                                <td>Organizacion logica y coherente</td>
+                                                <td>Organizacion aceptable</td>
+                                                <td>Sin estructura clara</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Redaccion</td>
+                                                <td>Sin errores gramaticales</td>
+                                                <td>Errores menores</td>
+                                                <td>Multiples errores</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab: Calificacion por Rubrica -->
+                        <div class="tab-content" id="tab-calificacion">
+                            <div class="tutorial-box">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>Requisito B: Calificacion Avanzada por Rubrica</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Al calificar con rubrica, simplemente <strong>seleccionas el nivel alcanzado en cada criterio</strong> y Moodle calcula la nota automaticamente. Esto garantiza una evaluacion objetiva, transparente y consistente.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Configurar la tarea con metodo "Rubrica"</strong>
+                                            <p>Al crear/editar la tarea, en <strong>"Calificacion"</strong> selecciona "Metodo de calificacion" = <span class="highlight-yes">Rubrica</span>. Establece la "Calificacion maxima" (ej: 100 puntos). Moodle ajusta automaticamente los puntos de la rubrica al maximo configurado.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Acceder a calificar entregas</strong>
+                                            <p>Ir a la tarea > <strong>"Ver todas las entregas"</strong> > clic en <strong>"Calificar"</strong> junto al nombre del estudiante.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Seleccionar niveles en cada criterio</strong>
+                                            <p>La rubrica aparecera con todos los criterios. <strong>Haz clic en el nivel alcanzado</strong> por el estudiante en cada criterio - se marcara en verde. Puedes agregar comentarios de retroalimentacion en cada criterio.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">4</div>
+                                        <div>
+                                            <strong>Guardar - la nota se calcula automaticamente</strong>
+                                            <p>Clic en <strong>"Guardar cambios"</strong>. La calificacion se calcula segun los niveles seleccionados y queda registrada en la libreta de calificaciones. El estudiante podra ver su rubrica calificada al entrar a la tarea.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tutorial-tips">
+                                    <strong><i class="fas fa-lightbulb"></i> Beneficios de calificar por rubrica:</strong>
+                                    Evaluacion objetiva y consistente &bull; El estudiante sabe exactamente donde mejorar &bull; La nota se calcula automaticamente &bull; Se reduce el tiempo de calificacion &bull; Queda registro detallado en la libreta
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab: Descripciones Claras -->
+                        <div class="tab-content" id="tab-descripcion">
+                            <div class="tutorial-box tutorial-box-green">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-align-left"></i>
+                                    <span>Requisito C: Descripciones Claras en cada Tarea</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Cada tarea debe tener una descripcion que explique <strong>con claridad que se requiere</strong> del estudiante. Una buena descripcion reduce dudas y mejora la calidad de las entregas.</p>
+
+                                <h4 class="tutorial-subtitle">Que debe incluir la descripcion:</h4>
+                                <div class="desc-checklist">
+                                    <div class="desc-item">
+                                        <i class="fas fa-bullseye"></i>
+                                        <div>
+                                            <strong>Objetivo</strong>
+                                            <p>Que se espera lograr con la tarea, relacionado con el resultado de aprendizaje.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-list-ol"></i>
+                                        <div>
+                                            <strong>Instrucciones detalladas</strong>
+                                            <p>Paso a paso de lo que el estudiante debe hacer. Ser lo mas especifico posible.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-file-export"></i>
+                                        <div>
+                                            <strong>Formato de entrega</strong>
+                                            <p>Tipo de archivo (PDF, DOCX), nombre esperado (ej: Apellido_Lab3.pdf), numero de paginas.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-clipboard-list"></i>
+                                        <div>
+                                            <strong>Criterios de evaluacion</strong>
+                                            <p>Breve mencion de los aspectos que se evaluaran. La rubrica tendra el detalle completo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="desc-item">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div>
+                                            <strong>Fecha limite y condiciones</strong>
+                                            <p>Clarificar si hay penalizacion por entrega tardia y las condiciones especiales.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Ejemplo -->
+                                <div class="desc-example">
+                                    <strong><i class="fas fa-eye"></i> Ejemplo de descripcion bien redactada:</strong>
+                                    <div class="desc-example-content">
+                                        <p><strong>TAREA: Informe de Laboratorio - Practica 3</strong></p>
+                                        <p><strong>OBJETIVO:</strong> Demostrar la comprension de circuitos en serie mediante la documentacion y analisis de resultados.</p>
+                                        <p><strong>INSTRUCCIONES:</strong></p>
+                                        <p>1. Redactar informe con: introduccion, marco teorico, procedimiento, resultados, analisis y conclusiones.<br>
+                                        2. Incluir tablas de datos y graficos de mediciones.<br>
+                                        3. Comparar resultados experimentales con valores teoricos.</p>
+                                        <p><strong>FORMATO:</strong> PDF | Nombre: Apellido_Nombre_Lab3.pdf | Max. 10 paginas</p>
+                                        <p><strong>EVALUACION:</strong> Mediante rubrica visible en esta tarea. Criterios: Contenido (30%), Estructura (20%), Analisis (30%), Presentacion (20%)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="rubrica-levels">
                         <div class="level level-4"><span class="level-badge">4</span> 76-100% de instrumentos son claros y alineados al resultado de aprendizaje</div>
                         <div class="level level-3"><span class="level-badge">3</span> 51-75% de instrumentos son claros y alineados al resultado de aprendizaje</div>
