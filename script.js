@@ -35,6 +35,22 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
 });
 
+// Resource tabs (Creatividad section)
+document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const tabId = btn.dataset.tab;
+        const tabContainer = btn.closest('.resource-tabs');
+
+        // Deactivate all buttons and contents within this tab group
+        tabContainer.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        tabContainer.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+        // Activate clicked
+        btn.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+    });
+});
+
 // Back to top button
 const backToTop = document.getElementById('backToTop');
 

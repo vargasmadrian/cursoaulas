@@ -241,57 +241,247 @@
                             <span class="rubrica-peso">Peso: 20%</span>
                         </div>
                     </div>
-                    <p class="rubrica-desc">Se utilizan recursos y materiales didacticos variados, de alta calidad e inherentes al contenido de la materia. <strong>(al menos 3 tipos de actividades)</strong></p>
+                    <p class="rubrica-desc">Se utilizan recursos y materiales didacticos variados, de alta calidad e inherentes al contenido de la materia. Debes incluir <strong>al menos 3 tipos diferentes de recursos</strong> en tu aula virtual. A continuacion te explicamos cada uno:</p>
 
-                    <!-- Tutorial: Tutor Virtual -->
-                    <div class="tutorial-box">
-                        <div class="tutorial-title">
-                            <i class="fas fa-robot"></i>
-                            <span>Requisito: Crear un Tutor Virtual con NotebookLM</span>
+                    <!-- Recursos requeridos - Tabs -->
+                    <div class="resource-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="tab-pdf"><i class="fas fa-file-pdf"></i> PDFs de Autoria</button>
+                            <button class="tab-btn" data-tab="tab-ppt"><i class="fas fa-file-powerpoint"></i> Presentaciones PPT</button>
+                            <button class="tab-btn" data-tab="tab-notebook"><i class="fas fa-robot"></i> Tutor Virtual IA</button>
+                            <button class="tab-btn" data-tab="tab-h5p"><i class="fas fa-puzzle-piece"></i> H5P Interactivo</button>
+                            <button class="tab-btn" data-tab="tab-genially"><i class="fas fa-magic"></i> Genially</button>
                         </div>
-                        <p class="tutorial-intro">Debes crear un tutor virtual con IA usando <strong>NotebookLM</strong> (Google) y publicarlo en tu aula Moodle. Este recurso innovador cuenta como parte de tu creatividad.</p>
 
-                        <div class="tutorial-steps">
-                            <div class="tutorial-step">
-                                <div class="tutorial-step-num">1</div>
-                                <div>
-                                    <strong>Crea tu tutor en NotebookLM</strong>
-                                    <p>Sube los materiales de tu curso (PDFs, docs, presentaciones) a NotebookLM y configura el notebook como tutor virtual. Obtiene el enlace para compartir.</p>
+                        <!-- Tab: PDFs de Autoria -->
+                        <div class="tab-content active" id="tab-pdf">
+                            <div class="tutorial-box tutorial-box-red">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Recurso A: PDFs de Autoria Propia</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Son documentos PDF creados por ti: <strong>guias de laboratorio, manuales de practica, resumenes tematicos, guias de ejercicios</strong>, etc. Demuestran que generas material propio y de calidad.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Activar edicion en tu curso de Moodle</strong>
+                                            <p>Haz clic en el boton "Activar edicion" o el icono de engranaje en la pagina principal del curso.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Anadir actividad o recurso > Archivo</strong>
+                                            <p>En la seccion deseada, haz clic en "Anadir una actividad o un recurso" y selecciona <span class="icon-ref"><i class="fas fa-file"></i> Archivo</span> (en la categoria RECURSOS).</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Completa el nombre y descripcion</strong>
+                                            <p>Escribe un titulo descriptivo (ej: "Guia de Laboratorio 1 - Circuitos Electricos") y una breve descripcion del contenido.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">4</div>
+                                        <div>
+                                            <strong>Sube el archivo PDF</strong>
+                                            <p><strong>Arrastra y suelta</strong> el PDF en la zona de archivos, o haz clic en "Agregar" > "Subir un archivo" > selecciona el PDF desde tu computadora.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">5</div>
+                                        <div>
+                                            <strong>Guardar cambios y regresar al curso</strong>
+                                            <p>En "Apariencia" puedes elegir "Forzar descarga" o "Abrir" segun prefieras. Luego guarda los cambios.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tutorial-tips">
+                                    <strong><i class="fas fa-lightbulb"></i> Tips para PDFs de calidad:</strong>
+                                    Incluir portada con logo institucional &bull; Formato consistente con titulos y numeracion &bull; Agregar bibliografia &bull; Verificar que no pese mas de 50 MB
                                 </div>
                             </div>
-                            <div class="tutorial-step">
-                                <div class="tutorial-step-num">2</div>
-                                <div>
-                                    <strong>En Moodle: Anadir actividad o recurso > Pagina</strong>
-                                    <p>Dentro de tu aula virtual, agrega un nuevo recurso tipo <em>"Pagina"</em>.</p>
+                        </div>
+
+                        <!-- Tab: Presentaciones PPT -->
+                        <div class="tab-content" id="tab-ppt">
+                            <div class="tutorial-box tutorial-box-orange">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-file-powerpoint"></i>
+                                    <span>Recurso B: Presentaciones PowerPoint</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro">Son las diapositivas que creas para impartir tus clases. Permiten al estudiante <strong>revisar el material de clase en cualquier momento</strong>.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Activar edicion en tu curso de Moodle</strong>
+                                            <p>Haz clic en "Activar edicion" en la pagina principal del curso.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Anadir actividad o recurso > Archivo</strong>
+                                            <p>Selecciona <span class="icon-ref"><i class="fas fa-file"></i> Archivo</span> (categoria RECURSOS), igual que con el PDF.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Completa nombre y sube el archivo .pptx</strong>
+                                            <p>Titulo descriptivo (ej: "Presentacion Semana 3 - Bases de Datos"). Arrastra o sube el archivo .pptx.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">4</div>
+                                        <div>
+                                            <strong>Guardar cambios y regresar al curso</strong>
+                                            <p>Haz clic en "Guardar cambios y regresar al curso".</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tutorial-tips">
+                                    <strong><i class="fas fa-lightbulb"></i> Tip:</strong>
+                                    Si prefieres que los estudiantes no modifiquen tu presentacion, exportala como PDF desde PowerPoint (Archivo > Guardar como > PDF) y subela como PDF.
                                 </div>
                             </div>
-                            <div class="tutorial-step">
-                                <div class="tutorial-step-num">3</div>
-                                <div>
-                                    <strong>En Descripcion: clic en "Mostrar mas botones"</strong>
-                                    <p>En el editor de texto, haz clic en el icono de <span class="icon-ref"><i class="fas fa-ellipsis-h"></i> Mostrar mas botones</span> para expandir la barra de herramientas.</p>
+                        </div>
+
+                        <!-- Tab: Tutor Virtual NotebookLM -->
+                        <div class="tab-content" id="tab-notebook">
+                            <div class="tutorial-box">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-robot"></i>
+                                    <span>Recurso C: Tutor Virtual con NotebookLM</span>
+                                    <span class="badge-required">Requerido</span>
+                                </div>
+                                <p class="tutorial-intro"><strong>NotebookLM</strong> es una herramienta gratuita de Google con IA (Gemini) que crea un asistente virtual personalizado a partir de tus materiales. Los estudiantes le hacen preguntas y la IA responde <strong>exclusivamente con tus fuentes</strong>, reduciendo alucinaciones.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Accede a notebooklm.google.com y crea un cuaderno</strong>
+                                            <p>Inicia sesion con tu cuenta Google. Clic en "Crear nuevo cuaderno" y asigna un nombre (ej: "Tutor - Programacion Orientada a Objetos").</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Agrega tus fuentes (materiales del curso)</strong>
+                                            <p>Clic en "Agregar fuentes" (icono +). Sube PDFs, Google Docs, Slides, enlaces web o videos de YouTube. Puedes agregar <strong>mas de 100 fuentes</strong> por cuaderno.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Prueba el tutor con preguntas de ejemplo</strong>
+                                            <p>En el cuadro de dialogo inferior, escribe preguntas como lo haria un estudiante. Verifica que las respuestas sean correctas. Opcionalmente genera un <strong>Audio Overview</strong> (podcast sobre tu material) desde el panel derecho.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">4</div>
+                                        <div>
+                                            <strong>Comparte con enlace publico</strong>
+                                            <p>Clic en <span class="icon-ref"><i class="fas fa-share-alt"></i> Compartir</span> (esquina superior derecha) > "Cualquier usuario con el enlace" > <strong>Copiar enlace</strong>. Verifica que aparezca un icono de globo junto al boton.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">5</div>
+                                        <div>
+                                            <strong>Publica el enlace en Moodle</strong>
+                                            <p>"Anadir actividad o recurso" > <strong>"Pagina"</strong> > en el editor de Contenido haz clic en <span class="icon-ref"><i class="fas fa-ellipsis-h"></i> Mostrar mas botones</span> y luego en <span class="icon-ref"><i class="fas fa-code"></i> &lt;&gt;</span> (HTML). Pega el enlace del tutor y guarda.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tutorial-step">
-                                <div class="tutorial-step-num">4</div>
-                                <div>
-                                    <strong>Clic en el boton "&lt;&gt;" (codigo fuente HTML)</strong>
-                                    <p>Haz clic en el boton <span class="icon-ref"><i class="fas fa-code"></i> &lt;&gt;</span> para abrir el editor de codigo HTML.</p>
+                        </div>
+
+                        <!-- Tab: H5P -->
+                        <div class="tab-content" id="tab-h5p">
+                            <div class="tutorial-box tutorial-box-green">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span>Recurso D: Contenido Interactivo con H5P</span>
+                                    <span class="badge-optional">Recomendado</span>
+                                </div>
+                                <p class="tutorial-intro">H5P esta <strong>integrado nativamente en Moodle</strong>: crea actividades interactivas sin herramientas externas. Ofrece +40 tipos de contenido: presentaciones interactivas, videos con preguntas, crucigramas, juegos de memoria, drag & drop y mas.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Activar edicion > Anadir actividad o recurso</strong>
+                                            <p>Selecciona <span class="icon-ref"><i class="fas fa-puzzle-piece"></i> H5P</span> o "Contenido interactivo" de la lista.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Elige el tipo de actividad</strong>
+                                            <p>Ejemplos populares: <em>Course Presentation</em> (diapositivas con quiz), <em>Interactive Video</em> (video con preguntas), <em>Memory Game</em>, <em>Crossword</em>, <em>Timeline</em>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Completa el contenido con el asistente guiado y guarda</strong>
+                                            <p>Sigue el formulario paso a paso. Las calificaciones se registran <strong>automaticamente en la libreta de Moodle</strong>. Es gratuito y no requiere cuentas adicionales.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tutorial-tips">
+                                    <strong><i class="fas fa-star"></i> Por que H5P?</strong>
+                                    Ya viene incluido en Moodle &bull; Las notas se registran automaticamente &bull; Gratuito &bull; Aumenta el engagement de los estudiantes significativamente
                                 </div>
                             </div>
-                            <div class="tutorial-step">
-                                <div class="tutorial-step-num">5</div>
-                                <div>
-                                    <strong>Reemplaza el contenido con el codigo de la IA</strong>
-                                    <p>Pega el contenido/codigo que te proporciona NotebookLM, reemplazando todo el texto existente. Guarda los cambios.</p>
+                        </div>
+
+                        <!-- Tab: Genially -->
+                        <div class="tab-content" id="tab-genially">
+                            <div class="tutorial-box tutorial-box-purple">
+                                <div class="tutorial-title">
+                                    <i class="fas fa-magic"></i>
+                                    <span>Recurso E: Presentaciones Interactivas con Genially</span>
+                                    <span class="badge-optional">Recomendado</span>
+                                </div>
+                                <p class="tutorial-intro">Genially permite crear <strong>infografias interactivas, escape rooms educativos, presentaciones animadas y mapas conceptuales</strong> con botones, animaciones y multimedia. A diferencia de PowerPoint, el contenido es dinamico e interactivo.</p>
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">1</div>
+                                        <div>
+                                            <strong>Crea tu contenido en genially.com</strong>
+                                            <p>Registrate gratis, elige una plantilla (presentacion, infografia, escape room) y personaliza con tu contenido.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">2</div>
+                                        <div>
+                                            <strong>Copia el codigo iframe</strong>
+                                            <p>Clic en <span class="icon-ref"><i class="fas fa-share-alt"></i> Compartir</span> > pestana <strong>"Insertar"</strong> > copia el <strong>codigo iframe</strong>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-num">3</div>
+                                        <div>
+                                            <strong>Inserta en Moodle via Etiqueta o Pagina</strong>
+                                            <p>"Anadir actividad o recurso" > <strong>"Etiqueta"</strong> o <strong>"Pagina"</strong> > en el editor clic en <span class="icon-ref"><i class="fas fa-ellipsis-h"></i> Mas botones</span> > <span class="icon-ref"><i class="fas fa-code"></i> &lt;&gt;</span> > pega el iframe y guarda.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tutorial-tips">
+                                    <strong><i class="fas fa-star"></i> Por que Genially?</strong>
+                                    Version gratuita completa &bull; Sin conocimientos de programacion &bull; Los estudiantes interactuan sin salir de Moodle &bull; Altamente visual y atractivo
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="rubrica-levels">
-                        <div class="level level-4"><span class="level-badge">4</span> 76-100% de actividades usan recursos y materiales didacticos</div>
+                        <div class="level level-4"><span class="level-badge">4</span> 76-100% de actividades usan recursos y materiales didacticos variados</div>
                         <div class="level level-3"><span class="level-badge">3</span> 51-75% de actividades usan recursos y materiales didacticos</div>
                         <div class="level level-2"><span class="level-badge">2</span> 26-50% de actividades usan recursos y materiales didacticos</div>
                         <div class="level level-1"><span class="level-badge">1</span> 0-25% de actividades usan recursos y materiales didacticos</div>
