@@ -35,6 +35,21 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
 });
 
+// Rubrica cards collapse/expand
+document.querySelectorAll('.rubrica-card').forEach(card => {
+    const header = card.querySelector('.rubrica-header');
+    header.addEventListener('click', () => {
+        const wasExpanded = card.classList.contains('rubrica-card-expanded');
+        card.classList.toggle('rubrica-card-expanded');
+        // Update grid span
+        if (!wasExpanded) {
+            card.style.gridColumn = '1 / -1';
+        } else {
+            card.style.gridColumn = '';
+        }
+    });
+});
+
 // Resource tabs (Creatividad section)
 document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {

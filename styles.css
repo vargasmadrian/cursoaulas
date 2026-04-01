@@ -684,6 +684,7 @@ ul { list-style: none; }
     border-radius: var(--radius-lg);
     padding: 28px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .rubrica-card:hover {
@@ -691,10 +692,54 @@ ul { list-style: none; }
     box-shadow: var(--shadow-xl);
 }
 
+/* Collapsible rubrica cards */
+.rubrica-card .rubrica-header {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.rubrica-card .rubrica-header .rubrica-toggle {
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: var(--gray-400);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.rubrica-card.rubrica-card-expanded .rubrica-header .rubrica-toggle {
+    transform: rotate(180deg);
+}
+
+.rubrica-card .rubrica-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.rubrica-card.rubrica-card-expanded .rubrica-body {
+    max-height: 5000px;
+    opacity: 1;
+}
+
+.rubrica-card:not(.rubrica-card-expanded) {
+    cursor: pointer;
+}
+
+.rubrica-card:not(.rubrica-card-expanded):hover {
+    border-color: var(--primary);
+}
+
 .rubrica-header {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-bottom: 0;
+    transition: margin-bottom 0.3s ease;
+}
+
+.rubrica-card.rubrica-card-expanded .rubrica-header {
     margin-bottom: 16px;
 }
 
@@ -863,8 +908,13 @@ ul { list-style: none; }
 }
 
 /* ========== Tutorial Box ========== */
-.rubrica-card-expanded {
+.rubrica-card.rubrica-card-expanded {
     grid-column: 1 / -1;
+    cursor: default;
+}
+
+.rubrica-card.rubrica-card-expanded:hover {
+    transform: none;
 }
 
 .tutorial-box {
