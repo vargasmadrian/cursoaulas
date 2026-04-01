@@ -70,7 +70,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 });
 
 // Formulario de entrega - Google Sheets
-const GOOGLE_SCRIPT_URL = 'PEGAR_URL_AQUI';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyzNou0efXMEYp0k8k4LG6BRJmfEuYN8t_aQDI3Y18qaAjxeeR_cTmvXwd7BFnbRtN48A/exec';
 
 const formEntrega = document.getElementById('formEntrega');
 if (formEntrega) {
