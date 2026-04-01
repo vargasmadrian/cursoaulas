@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 
@@ -158,11 +158,12 @@
     <!-- Guia Paso a Paso -->
     <section class="section" id="guia">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header collapsible-header" id="guiaToggle">
                 <span class="section-tag">Instrucciones</span>
-                <h2>Guia Paso a Paso</h2>
+                <h2>Guia Paso a Paso <i class="fas fa-chevron-down collapsible-chevron"></i></h2>
                 <p>Sigue estos pasos para configurar tu aula virtual correctamente.</p>
             </div>
+            <div class="collapsible-body" id="guiaBody">
             <div class="steps-container">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -228,6 +229,7 @@
                     </div>
                 </div>
             </div>
+            </div><!-- /collapsible-body -->
         </div>
     </section>
 
@@ -1715,6 +1717,6 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=7"></script>
 </body>
 </html>

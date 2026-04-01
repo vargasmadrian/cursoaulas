@@ -35,6 +35,18 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
 });
 
+// Collapsible sections (Guia Paso a Paso)
+document.querySelectorAll('.collapsible-header').forEach(header => {
+    const bodyId = header.id.replace('Toggle', 'Body');
+    const body = document.getElementById(bodyId);
+    if (body) {
+        header.addEventListener('click', () => {
+            header.classList.toggle('expanded');
+            body.classList.toggle('expanded');
+        });
+    }
+});
+
 // Rubrica cards collapse/expand
 document.querySelectorAll('.rubrica-card').forEach(card => {
     const header = card.querySelector('.rubrica-header');

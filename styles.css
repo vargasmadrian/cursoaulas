@@ -1889,6 +1889,31 @@ ul { list-style: none; }
     margin-right: 6px;
 }
 
+/* ========== Collapsible Sections ========== */
+.collapsible-header {
+    cursor: pointer;
+    user-select: none;
+}
+
+.collapsible-chevron {
+    font-size: 0.7em;
+    color: var(--gray-400);
+    transition: transform 0.3s ease;
+    margin-left: 8px;
+}
+
+.collapsible-header.expanded .collapsible-chevron {
+    transform: rotate(180deg);
+}
+
+.collapsible-body {
+    display: none;
+}
+
+.collapsible-body.expanded {
+    display: block;
+}
+
 /* ========== Aprobacion del Curso ========== */
 .aprobacion-grid {
     display: flex;
