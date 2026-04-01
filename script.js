@@ -69,6 +69,42 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     });
 });
 
+// Formulario de entrega - Google Sheets
+const GOOGLE_SCRIPT_URL = 'PEGAR_URL_AQUI';
+
+const formEntrega = document.getElementById('formEntrega');
+if (formEntrega) {
+    formEntrega.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = document.getElementById('btnEntrega');
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+        const datos = {
+            nombre: document.getElementById('nombre').value,
+            nrc: document.getElementById('nrc').value,
+            tipo: document.getElementById('tipo').value,
+            materia: document.getElementById('materia').value,
+            fecha: new Date().toLocaleString('es-EC')
+        };
+
+        try {
+            await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(datos)
+            });
+            formEntrega.style.display = 'none';
+            document.getElementById('entregaExito').style.display = 'block';
+        } catch (error) {
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar entrega';
+            alert('Error al enviar. Intenta nuevamente.');
+        }
+    });
+}
+
 // Back to top button
 const backToTop = document.getElementById('backToTop');
 

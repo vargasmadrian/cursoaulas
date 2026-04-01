@@ -1888,3 +1888,227 @@ ul { list-style: none; }
     color: var(--primary);
     margin-right: 6px;
 }
+
+/* ========== Aprobacion del Curso ========== */
+.aprobacion-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.aprobacion-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+}
+
+.aprobacion-card h3 {
+    font-size: 1.05rem;
+    color: var(--gray-900);
+    margin-bottom: 8px;
+}
+
+.aprobacion-card p {
+    font-size: 0.88rem;
+    color: var(--gray-500);
+    line-height: 1.5;
+}
+
+.aprobacion-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin: 0 auto 12px;
+}
+
+.aprobacion-day {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.aprobacion-arrow {
+    font-size: 1.5rem;
+    color: var(--gray-300);
+}
+
+.aprobacion-requisitos {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    margin-bottom: 40px;
+}
+
+.aprobacion-requisitos h3 {
+    font-size: 1.1rem;
+    color: var(--gray-900);
+    margin-bottom: 20px;
+}
+
+.aprobacion-requisitos h3 i {
+    color: var(--primary);
+    margin-right: 8px;
+}
+
+.requisitos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.requisito-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    line-height: 1.5;
+}
+
+.requisito-item i {
+    color: var(--green);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* ========== Formulario de Entrega ========== */
+.entrega-form-container {
+    background: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.entrega-form-container h3 {
+    font-size: 1.2rem;
+    color: var(--gray-900);
+    margin-bottom: 4px;
+}
+
+.entrega-form-container h3 i {
+    color: var(--primary);
+    margin-right: 8px;
+}
+
+.entrega-form-container > p {
+    font-size: 0.9rem;
+    color: var(--gray-500);
+    margin-bottom: 24px;
+}
+
+.entrega-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px 14px;
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    color: var(--gray-700);
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.btn-submit {
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.entrega-exito {
+    text-align: center;
+    padding: 24px;
+}
+
+.entrega-exito i {
+    font-size: 3rem;
+    color: var(--green);
+    margin-bottom: 12px;
+}
+
+.entrega-exito h4 {
+    font-size: 1.2rem;
+    color: var(--gray-900);
+    margin-bottom: 8px;
+}
+
+.entrega-exito p {
+    font-size: 0.9rem;
+    color: var(--gray-500);
+}
+
+/* ========== Soporte Centrado ========== */
+.support-grid-centered {
+    display: flex;
+    justify-content: center;
+}
+
+.support-grid-centered .support-card {
+    max-width: 400px;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .aprobacion-arrow {
+        transform: rotate(90deg);
+    }
+}

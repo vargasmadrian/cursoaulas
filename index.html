@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -29,6 +29,7 @@
                 <li><a href="#guia">Guia Paso a Paso</a></li>
                 <li><a href="#rubrica">Rubrica</a></li>
                 <li><a href="#checklist">Checklist</a></li>
+                <li><a href="#aprobacion">Aprobacion</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#soporte">Soporte</a></li>
             </ul>
@@ -166,57 +167,64 @@
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Identifica tu tipo de aula</h3>
-                        <p>Determina si tu aula es repotenciada o no repotenciada. Esto definira que plantilla debes usar.</p>
+                        <h3>Descarga la plantilla PUCESE</h3>
+                        <p>Ve a la seccion de <a href="#plantillas">Plantillas</a> y descarga el archivo .mbz que corresponda a tu tipo de aula (repotenciada o no repotenciada).</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Descarga la plantilla correspondiente</h3>
-                        <p>Ve a la seccion de plantillas y descarga el archivo .mbz que corresponda a tu tipo de aula.</p>
+                        <h3>Importa la plantilla en Moodle</h3>
+                        <p>Accede a tu aula virtual en Moodle, ve a <strong>Administracion > Restaurar</strong> y sube el archivo .mbz descargado.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Importa la plantilla en Moodle</h3>
-                        <p>Accede a tu aula virtual en Moodle, ve a "Restaurar" y sube el archivo .mbz descargado.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
                     <div class="step-content step-warning">
                         <h3>Configura las opciones de restauracion</h3>
-                        <p>Durante el proceso de restauracion, asegurate de marcar estas dos opciones criticas:</p>
+                        <p>Durante el proceso de restauracion, sigue este orden:</p>
                         <div class="warning-box">
                             <div class="warning-item">
                                 <i class="fas fa-exclamation-triangle"></i>
                                 <div>
-                                    <strong>Mantener los roles y matriculaciones actuales:</strong> Selecciona <span class="highlight-yes">SI</span> para no perder los estudiantes ya matriculados en tu curso.
+                                    <strong>1ro - Restaurar en este curso:</strong> Selecciona <span class="highlight-delete">Borrar el contenido del curso actual y despues restaurar</span> para que la plantilla reemplace completamente el contenido anterior.
                                 </div>
                             </div>
                             <div class="warning-item">
                                 <i class="fas fa-exclamation-triangle"></i>
                                 <div>
-                                    <strong>Restaurar en este curso:</strong> Selecciona <span class="highlight-delete">Borrar el contenido del curso actual y despues restaurar</span> para que la plantilla reemplace completamente el contenido anterior.
+                                    <strong>2do - Mantener los roles y matriculaciones actuales:</strong> Selecciona <span class="highlight-yes">SI</span> para no perder los estudiantes ya matriculados en tu curso.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Completa la informacion general</h3>
+                        <p>Agrega los elementos esenciales de tu aula: horario de clases, horario de mentorias, silabo, introduccion, presentacion del docente con foto, y normas/politicas del curso. <em>(Criterio 3: Minuciosidad)</em></p>
+                    </div>
+                </div>
+                <div class="step">
                     <div class="step-number">5</div>
                     <div class="step-content">
-                        <h3>Personaliza tu contenido</h3>
-                        <p>Agrega tus materiales, tareas, foros y recursos especificos de tu curso.</p>
+                        <h3>Sube tus recursos creativos</h3>
+                        <p>Incluye al menos 3 tipos de recursos diferentes: PDFs de autoria propia, presentaciones PPT, Tutor Virtual con NotebookLM, contenido H5P o presentaciones Genially. <em>(Criterio 1: Creatividad)</em></p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">6</div>
                     <div class="step-content">
-                        <h3>Revisa y publica</h3>
-                        <p>Verifica que todo este correcto usando el checklist y haz visible tu aula para los estudiantes.</p>
+                        <h3>Configura evaluaciones y libreta</h3>
+                        <p>Crea rubricas de evaluacion para cada tarea, redacta descripciones claras en las actividades, y organiza la libreta de calificaciones por RdA (1, 2 y 3). <em>(Criterios 2 y 4)</em></p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Revisa con el Checklist y publica</h3>
+                        <p>Verifica que todo este correcto usando el <a href="#checklist">Checklist</a> de esta pagina. Recuerda: al calificar cada tarea, agrega comentarios por criterio, un comentario general, y hazlo maximo 1 semana despues de la fecha de entrega. <em>(Criterio 5: Retroalimentacion)</em></p>
                     </div>
                 </div>
             </div>
@@ -1564,15 +1572,117 @@
         </div>
     </section>
 
+    <!-- Aprobacion del Curso -->
+    <section class="section section-light" id="aprobacion">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag tag-red">Obligatorio</span>
+                <h2>Como Aprobar este Curso</h2>
+                <p>Este curso es de <strong>aprobacion obligatoria</strong>. Debes completar tu aula virtual y enviarla para evaluacion.</p>
+            </div>
+
+            <div class="aprobacion-grid">
+                <div class="aprobacion-card">
+                    <div class="aprobacion-icon icon-ci-blue"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="aprobacion-day">Lunes</div>
+                    <h3>Clase presencial</h3>
+                    <p>El docente del curso explica los contenidos, criterios de evaluacion y buenas practicas para configurar tu aula virtual.</p>
+                </div>
+                <div class="aprobacion-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="aprobacion-card">
+                    <div class="aprobacion-icon icon-ci-green"><i class="fas fa-laptop-code"></i></div>
+                    <div class="aprobacion-day">Martes</div>
+                    <h3>Trabajo autonomo</h3>
+                    <p>Con lo aprendido el lunes y esta guia web, configuras tu aula virtual completa en Moodle siguiendo los 7 pasos y los 5 criterios de la rubrica.</p>
+                </div>
+                <div class="aprobacion-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="aprobacion-card">
+                    <div class="aprobacion-icon icon-ci-orange"><i class="fas fa-paper-plane"></i></div>
+                    <div class="aprobacion-day">Martes</div>
+                    <h3>Envia tu aula</h3>
+                    <p>Al terminar, completa el formulario de abajo para registrar tu entrega. Tu aula sera evaluada con la rubrica de 5 criterios.</p>
+                </div>
+            </div>
+
+            <div class="aprobacion-requisitos">
+                <h3><i class="fas fa-clipboard-check"></i> Requisitos para aprobar</h3>
+                <div class="requisitos-grid">
+                    <div class="requisito-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Aula virtual configurada usando la <strong>plantilla PUCESE</strong></span>
+                    </div>
+                    <div class="requisito-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Al menos <strong>3 tipos de recursos creativos</strong> (PDFs, PPT, NotebookLM, H5P, Genially)</span>
+                    </div>
+                    <div class="requisito-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span><strong>Rubricas de evaluacion</strong> creadas para cada tarea</span>
+                    </div>
+                    <div class="requisito-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span><strong>Libreta de calificaciones</strong> organizada por RdA (1, 2 y 3)</span>
+                    </div>
+                    <div class="requisito-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Informacion completa: horarios, silabo, presentacion docente, normas</span>
+                    </div>
+                    <div class="requisito-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Puntaje minimo: <strong>70/100 puntos</strong> en la rubrica de evaluacion</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de entrega -->
+            <div class="entrega-form-container" id="entrega">
+                <h3><i class="fas fa-paper-plane"></i> Enviar mi Aula Virtual</h3>
+                <p>Completa este formulario una vez que hayas terminado de configurar tu aula virtual.</p>
+                <form id="formEntrega" class="entrega-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo del docente</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Perez Lopez">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nrc">NRC del curso</label>
+                            <input type="text" id="nrc" name="nrc" required placeholder="Ej: 4521">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo de aula</label>
+                            <select id="tipo" name="tipo" required>
+                                <option value="" disabled selected>Selecciona...</option>
+                                <option value="Repotenciada">Repotenciada</option>
+                                <option value="No Repotenciada">No Repotenciada</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="materia">Nombre de la materia</label>
+                        <input type="text" id="materia" name="materia" required placeholder="Ej: Bases de Datos I">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" id="btnEntrega">
+                        <i class="fas fa-paper-plane"></i> Enviar entrega
+                    </button>
+                </form>
+                <div id="entregaExito" class="entrega-exito" style="display:none">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Entrega registrada exitosamente!</h4>
+                    <p>Tu aula virtual ha sido registrada para evaluacion. Recibiras los resultados por correo electronico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Soporte -->
     <section class="section" id="soporte">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Contacto</span>
                 <h2>Necesitas Ayuda?</h2>
-                <p>Si tienes dudas o problemas, no dudes en contactarnos a traves de estos canales.</p>
+                <p>Si tienes dudas o problemas, no dudes en contactarnos.</p>
             </div>
-            <div class="support-grid">
+            <div class="support-grid support-grid-centered">
                 <div class="support-card">
                     <div class="support-icon">
                         <i class="fas fa-envelope"></i>
@@ -1605,6 +1715,6 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>
