@@ -712,15 +712,11 @@ ul { list-style: none; }
 }
 
 .rubrica-card .rubrica-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.3s ease;
-    opacity: 0;
+    display: none;
 }
 
 .rubrica-card.rubrica-card-expanded .rubrica-body {
-    max-height: 5000px;
-    opacity: 1;
+    display: block;
 }
 
 .rubrica-card:not(.rubrica-card-expanded) {

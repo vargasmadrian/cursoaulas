@@ -38,16 +38,19 @@ document.querySelectorAll('.faq-question').forEach(button => {
 // Rubrica cards collapse/expand
 document.querySelectorAll('.rubrica-card').forEach(card => {
     const header = card.querySelector('.rubrica-header');
-    header.addEventListener('click', () => {
+    header.addEventListener('click', (e) => {
+        e.stopPropagation();
         const wasExpanded = card.classList.contains('rubrica-card-expanded');
         card.classList.toggle('rubrica-card-expanded');
-        // Update grid span
-        if (!wasExpanded) {
-            card.style.gridColumn = '1 / -1';
-        } else {
-            card.style.gridColumn = '';
-        }
     });
+
+    // Prevent clicks inside body from toggling
+    const body = card.querySelector('.rubrica-body');
+    if (body) {
+        body.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    }
 });
 
 // Resource tabs (Creatividad section)
