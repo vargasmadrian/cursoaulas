@@ -2137,3 +2137,332 @@ ul { list-style: none; }
         transform: rotate(90deg);
     }
 }
+
+/* ========== NEXBYTE Producto ========== */
+.nav-nexbyte {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ea580c 100%);
+    color: var(--white) !important;
+    font-weight: 700 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-nexbyte:hover {
+    background: linear-gradient(135deg, #4338ca 0%, #6d28d9 50%, #c2410c 100%) !important;
+    color: var(--white) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(124, 58, 237, 0.4);
+}
+
+.nexbyte-section {
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0f0a24 0%, #1e1b4b 40%, #312e81 100%);
+}
+
+.nexbyte-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 30%, rgba(124, 58, 237, 0.35) 0%, transparent 50%),
+        radial-gradient(circle at 85% 70%, rgba(37, 99, 235, 0.35) 0%, transparent 50%),
+        radial-gradient(circle at 50% 100%, rgba(234, 88, 12, 0.18) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.nexbyte-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+    padding: 60px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+.nexbyte-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: linear-gradient(135deg, #ea580c, #f59e0b);
+    color: var(--white);
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 20px rgba(234, 88, 12, 0.4);
+}
+
+.nexbyte-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 18px;
+    letter-spacing: -0.02em;
+}
+
+.nexbyte-highlight {
+    background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #fbbf24 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nexbyte-tagline {
+    font-size: 1.15rem;
+    color: #c7d2fe;
+    margin-bottom: 14px;
+    letter-spacing: 0.02em;
+}
+
+.nexbyte-tagline strong {
+    color: var(--white);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.nexbyte-desc {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.nexbyte-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.nexbyte-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #e2e8f0;
+    font-size: 0.98rem;
+    font-weight: 500;
+}
+
+.nexbyte-features i {
+    color: #4ade80;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.nexbyte-price-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 28px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    margin-bottom: 28px;
+}
+
+.nexbyte-price {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.nexbyte-price-amount {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+    background: linear-gradient(135deg, #fbbf24, #ea580c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nexbyte-price-period {
+    font-size: 1rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.nexbyte-price-tag {
+    padding: 6px 14px;
+    background: rgba(74, 222, 128, 0.15);
+    color: #4ade80;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.nexbyte-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn-nexbyte {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ea580c 100%);
+    color: var(--white);
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.45);
+    transition: all 0.3s ease;
+}
+
+.btn-nexbyte:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(124, 58, 237, 0.6);
+    filter: brightness(1.1);
+}
+
+.btn-nexbyte-outline {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+}
+
+.btn-nexbyte-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--white);
+    transform: translateY(-2px);
+}
+
+.nexbyte-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.nexbyte-logo-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: nexbyteFloat 4s ease-in-out infinite;
+}
+
+.nexbyte-logo-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.4) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(30px);
+    z-index: 0;
+}
+
+.nexbyte-logo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes nexbyteFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.nexbyte-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    width: 100%;
+    max-width: 340px;
+}
+
+.nexbyte-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    text-align: center;
+}
+
+.nexbyte-stat-num {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 6px;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nexbyte-stat-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .nexbyte-card {
+        grid-template-columns: 1fr;
+        padding: 40px 28px;
+        gap: 40px;
+    }
+
+    .nexbyte-title {
+        font-size: 2rem;
+    }
+
+    .nexbyte-right {
+        order: -1;
+    }
+
+    .nexbyte-logo-wrapper {
+        max-width: 240px;
+    }
+
+    .nexbyte-actions {
+        flex-direction: column;
+    }
+
+    .nexbyte-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nexbyte-section {
+        padding: 60px 0;
+    }
+
+    .nexbyte-title {
+        font-size: 1.6rem;
+    }
+
+    .nexbyte-price-amount {
+        font-size: 2.2rem;
+    }
+
+    .nexbyte-price-box {
+        padding: 14px 20px;
+        flex-wrap: wrap;
+    }
+}
