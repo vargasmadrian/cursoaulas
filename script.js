@@ -149,3 +149,24 @@ document.querySelectorAll('.card, .step, .faq-item, .support-card, .checklist-co
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     observer.observe(el);
 });
+
+// Copy-to-clipboard for code boxes (Contenido para la web)
+document.querySelectorAll('.code-box').forEach(box => {
+    const btn = box.querySelector('.code-copy-btn');
+    const code = box.querySelector('pre code');
+    if (!btn || !code) return;
+    btn.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText(code.innerText);
+            const originalHTML = btn.innerHTML;
+            btn.classList.add('copied');
+            btn.innerHTML = '<i class="fas fa-check"></i> Copiado';
+            setTimeout(() => {
+                btn.classList.remove('copied');
+                btn.innerHTML = originalHTML;
+            }, 1800);
+        } catch (err) {
+            btn.innerHTML = '<i class="fas fa-times"></i> Error';
+        }
+    });
+});

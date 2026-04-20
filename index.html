@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=8">
+    <link rel="stylesheet" href="styles.css?v=10">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <li><a href="#checklist">Checklist</a></li>
                 <li><a href="#aprobacion">Aprobacion</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#nexbyte" class="nav-nexbyte">Automatizar</a></li>
+                <li><a href="https://nexbyte.pro/planes" target="_blank" rel="noopener" class="nav-nexbyte">Automatizar</a></li>
                 <li><a href="#soporte">Soporte</a></li>
             </ul>
         </div>
@@ -490,9 +490,28 @@
                                                     editor de Contenido haz clic en <span class="icon-ref"><i
                                                             class="fas fa-ellipsis-h"></i> Mostrar mas botones</span> y
                                                     luego en <span class="icon-ref"><i class="fas fa-code"></i>
-                                                        &lt;&gt;</span> (HTML). Pega el enlace del tutor y guarda.</p>
+                                                        &lt;&gt;</span> (HTML). Pega el contenido de abajo y guarda.</p>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="code-box">
+                                        <div class="code-box-header">
+                                            <span><i class="fas fa-code"></i> Contenido para la web</span>
+                                            <button type="button" class="code-copy-btn"
+                                                aria-label="Copiar codigo"><i class="fas fa-copy"></i> Copiar</button>
+                                        </div>
+                                        <pre><code>&lt;p style="text-align:center;"&gt;
+  &lt;a href="https://notebooklm.google.com/notebook/0986d696-0e4f-42fe-bd37-f6a2d9bbda34"
+     target="_blank" rel="noopener"
+     style="display:inline-flex;align-items:center;gap:10px;padding:14px 24px;
+            background:#1a73e8;color:#fff;border-radius:10px;
+            text-decoration:none;font-weight:600;font-size:16px;"&gt;
+    &#x1F916; Abrir Tutor Virtual (NotebookLM)
+  &lt;/a&gt;
+&lt;/p&gt;</code></pre>
+                                        <p class="code-box-note"><i class="fas fa-info-circle"></i> El icono
+                                            &#x1F916; (robot) representa al tutor de IA. Se renderiza como emoji
+                                            nativo en Moodle sin dependencias externas.</p>
                                     </div>
                                 </div>
                             </div>
@@ -584,11 +603,29 @@
                                                     <strong>"Pagina"</strong> > en el editor clic en <span
                                                         class="icon-ref"><i class="fas fa-ellipsis-h"></i> Mas
                                                         botones</span> > <span class="icon-ref"><i
-                                                            class="fas fa-code"></i> &lt;&gt;</span> > pega el iframe y
-                                                    guarda.
+                                                            class="fas fa-code"></i> &lt;&gt;</span> > pega el
+                                                    contenido de abajo y guarda.
                                                 </p>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="code-box code-box-purple">
+                                        <div class="code-box-header">
+                                            <span><i class="fas fa-code"></i> Contenido para la web</span>
+                                            <button type="button" class="code-copy-btn"
+                                                aria-label="Copiar codigo"><i class="fas fa-copy"></i> Copiar</button>
+                                        </div>
+                                        <pre><code>&lt;div style="position:relative;padding-bottom:56.25%;height:0;
+            overflow:hidden;max-width:100%;border-radius:10px;"&gt;
+  &lt;iframe src="https://view.genially.com/58a2f8d948d7293ae873862a"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+          allowfullscreen="true" scrolling="no"
+          allownetworking="all"&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+                                        <p class="code-box-note"><i class="fas fa-info-circle"></i> El contenedor con
+                                            <strong>padding-bottom:56.25%</strong> mantiene la proporcion 16:9 para
+                                            que el recurso sea responsive dentro de Moodle.</p>
                                     </div>
                                     <div class="tutorial-tips">
                                         <strong><i class="fas fa-star"></i> Por que Genially?</strong>
@@ -2131,7 +2168,7 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="script.js?v=7"></script>
+    <script src="script.js?v=8"></script>
 </body>
 
 </html>

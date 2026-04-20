@@ -357,6 +357,9 @@ ul { list-style: none; }
     color: var(--gray-900);
     margin-bottom: 12px;
     letter-spacing: -0.01em;
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .section-header p {
@@ -1456,6 +1459,89 @@ ul { list-style: none; }
     color: var(--gray-700);
 }
 
+/* ========== Code Box (Contenido para la web) ========== */
+.code-box {
+    margin-top: 16px;
+    background: #0f172a;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    overflow: hidden;
+}
+
+.code-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: #1e293b;
+    color: #e2e8f0;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.code-box-header span i {
+    margin-right: 6px;
+    color: #60a5fa;
+}
+
+.code-box-purple .code-box-header span i {
+    color: #c084fc;
+}
+
+.code-copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.08);
+    color: #e2e8f0;
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.code-copy-btn:hover {
+    background: rgba(255,255,255,0.16);
+}
+
+.code-copy-btn.copied {
+    background: #16a34a;
+    border-color: #16a34a;
+}
+
+.code-box pre {
+    margin: 0;
+    padding: 14px 16px;
+    overflow-x: auto;
+    background: #0f172a;
+}
+
+.code-box code {
+    font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+    font-size: 0.78rem;
+    line-height: 1.55;
+    color: #e2e8f0;
+    white-space: pre;
+}
+
+.code-box-note {
+    margin: 0;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.75);
+    border-top: 1px solid var(--gray-200);
+    font-size: 0.78rem;
+    color: var(--gray-600);
+    line-height: 1.5;
+}
+
+.code-box-note i {
+    color: #2563eb;
+    margin-right: 4px;
+}
+
 /* ========== Checklist ========== */
 .checklist-container {
     display: grid;
@@ -1814,6 +1900,59 @@ ul { list-style: none; }
     .badge-required,
     .badge-optional {
         margin-left: 0;
+    }
+
+    .section-header h2 {
+        font-size: 1.65rem;
+        line-height: 1.25;
+    }
+
+    .section-header p {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 18px;
+    }
+
+    h3 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .btn-lg {
+        font-size: 0.95rem;
+        padding: 14px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .section-header p {
+        font-size: 0.92rem;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .container {
+        padding: 0 14px;
+    }
+
+    .back-to-top {
+        width: 44px;
+        height: 44px;
+        bottom: 16px;
+        right: 16px;
     }
 }
 
