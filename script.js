@@ -150,14 +150,14 @@ document.querySelectorAll('.card, .step, .faq-item, .support-card, .checklist-co
     observer.observe(el);
 });
 
-// Copy-to-clipboard for code boxes (Contenido para la web)
-document.querySelectorAll('.code-box').forEach(box => {
+// Copy-to-clipboard for code boxes and prompt boxes
+document.querySelectorAll('.code-box, .prompt-box').forEach(box => {
     const btn = box.querySelector('.code-copy-btn');
-    const code = box.querySelector('pre code');
-    if (!btn || !code) return;
+    const source = box.querySelector('pre code, .prompt-text');
+    if (!btn || !source) return;
     btn.addEventListener('click', async () => {
         try {
-            await navigator.clipboard.writeText(code.innerText);
+            await navigator.clipboard.writeText(source.innerText);
             const originalHTML = btn.innerHTML;
             btn.classList.add('copied');
             btn.innerHTML = '<i class="fas fa-check"></i> Copiado';
